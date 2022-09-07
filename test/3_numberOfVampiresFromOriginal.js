@@ -3,10 +3,10 @@ const expect = chai.expect;
 
 const Vampire = require('../vampire.js');
 
-describe("Vampire", function() {
+describe("Vampire", function () {
 
   let rootVampire;
-  beforeEach( function() {
+  beforeEach(function () {
     rootVampire = new Vampire("root");
   });
 
@@ -30,6 +30,7 @@ describe("Vampire", function() {
     });
 
     it("offspring 1 should be 1 from original", () => {
+      // console.log(offspring1.creator);
       expect(offspring1.numberOfVampiresFromOriginal).to.equal(1);
     });
 
